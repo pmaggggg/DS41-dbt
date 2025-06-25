@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    database: RAW       # your Snowflake database name, exactly as it appears
+    schema: dbt_pat     # your Snowflake schema with raw tables
+    tables:
+      - name: ORDERS    # your existing Snowflake table name
